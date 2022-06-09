@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #91aec1;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univ_amu.iut.ControleurUsagesAcademie">
+    <center>
+        <GridPane fx:id="gridPaneThematiques" alignment="CENTER" maxHeight="300.0" prefHeight="400" style="-fx-background-color: #91aec1;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="classeInverséeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE PARIS" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="créationNumériqueButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE VERSAILLES" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="différenciationPédagogiqueButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE NORMANDIE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="écoleInclusiveButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE BESANCON" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="EMICitoyennetéNumériqueButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE D AMIENS" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="enseignerADistanceButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE MONTPELLIER" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="expressionOralePodcast" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE POITIERS" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="evaluationButton" alignment="CENTER" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE D AIX-MARSEILLE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="formationAuxOutilsNumériquesButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE D ORLEANS-TOURS" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="formerADistanceButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE MAYOTTE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="hybridationButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE BORDEAUX" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="ludificationButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE CLERMONT-FERRAND" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="pédagogieDeProjetButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth=" 150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE DIJON" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="programmationCodageRobotiqueButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE GRENOBLE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="réalitéVirtuelleEtAugmentéeButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LA GUADELOUPE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="réseauxSociauxButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LA GUYANE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="sexercerSentraînerButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LA MARTINIQUE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="tiersLabButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE RENNES" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="TNEButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LA REUNION" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="travailCollaboratifMutualisationButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LIMOGES" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="travailEntrePairsButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LYON" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="webradioButton" mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE CORSE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE LILLE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <Button mnemonicParsing="false" onAction="#afficheUsageAcademie" prefHeight="67.0" prefWidth="150.0" style="-fx-background-color: #fff; -fx-border-color: black; -fx-border-radius: 5px;" text="ACADEMIE DE TOULOUSE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            </children>
+            <BorderPane.margin>
+                <Insets top="-50.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </center>
+    <top>
+        <HBox prefHeight="26.0" prefWidth="900.0" style="-fx-background-color: #91aec1;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="usageButtonRetourChoixVue" contentDisplay="CENTER" mnemonicParsing="false" onAction="#retourVersAcademie" style="-fx-background-color: #fff; -fx-border-color: #000;" text="Retour">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor></Button>
+            </children>
+        </HBox>
+    </top>
+    <bottom>
+        <GridPane fx:id="gridPaneUsage" prefHeight="200.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="nom1" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #97B6FB;" text="" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Inter Bold" size="13.0" />
+                    </font></Label>
+                <Label fx:id="thematique1" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="discipline1" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label fx:id="commentaire1" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label fx:id="nom2" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #97B6FB;" text="" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.rowIndex="2" />
+                <Label fx:id="thematique2" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label fx:id="discipline2" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label fx:id="commentaire2" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Label fx:id="nom3" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #97B6FB;" text="" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Inter Bold" size="13.0" />
+                    </font></Label>
+                <Label fx:id="thematique3" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label fx:id="discipline3" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Label fx:id="commentaire3" alignment="CENTER" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: #000; -fx-background-color: #fff; -fx-background-color: #fff;" text="" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" prefHeight="16.0" prefWidth="227.0" text="Nom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="16.0" prefWidth="226.0" text="Thématique" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="234.0" text="Discipline" GridPane.columnIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="231.0" text="Description" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </GridPane>
+    </bottom>
+</BorderPane>

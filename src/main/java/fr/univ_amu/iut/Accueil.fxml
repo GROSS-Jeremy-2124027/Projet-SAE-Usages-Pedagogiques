@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univ_amu.iut.ControleurAccueil">
+    <left>
+        <VBox style="-fx-background-color: #97B6FB;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" text="Button" visible="false" />
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <Button disable="true" mnemonicParsing="false" text="Retour" visible="false" />
+                <Label contentDisplay="CENTER" prefHeight="77.0" prefWidth="761.0" text="Accueil">
+                    <font>
+                        <Font name="Dyuthi" size="46.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+                <ImageView fitHeight="93.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="https://img.genial.ly/6049fc481c5ab90f85614253/c2c2fb3e-4c67-4024-9720-68dd7bc645bf.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="309.0" prefWidth="313.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" text="Cartographie des usages pédagogiques">
+                            <font>
+                                <Font name="Dyuthi" size="30.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane>
+                    <children>
+                        <ButtonBar fx:id="buttonBar" buttonMinWidth="110.0" layoutX="35.0" prefHeight="27.0" prefWidth="355.0" AnchorPane.leftAnchor="0.0">
+                            <buttons>
+                                <!--<Button fx:id="formbutton" mnemonicParsing="false" text="Formulaire">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>-->
+                                <Button fx:id="nextbutton" graphicTextGap="2.0" mnemonicParsing="false" onAction="#vaVersChoixVue" style="-fx-background-color: #fff; -fx-border-color: #000;" text="Suivant">
+                                    <font>
+                                        <Font name="Jamrul" size="14.0" />
+                                    </font>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                                </Button>
+                                <Button fx:id="connectbutton" mnemonicParsing="false" onAction="#vaVersConnexionAdmin" style="-fx-background-color: #fff; -fx-border-color: #000;" text="Connexion">
+                                    <font>
+                                        <Font name="Jamrul" size="14.0" />
+                                    </font>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                                </Button>
+                                <Button fx:id="aideButton" mnemonicParsing="false" onAction="#afficheAide" style="-fx-background-color: #fff; -fx-border-color: #000;" text="Aide">
+                                    <font>
+                                        <Font name="Jamrul" size="14.0" />
+                                    </font>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                                </Button>
+                            </buttons>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                            <effect>
+                                <Glow level="0.2" />
+                            </effect>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                        </ButtonBar>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </AnchorPane>
+                <AnchorPane prefHeight="56.0" prefWidth="838.0">
+                    <children>
+                        <Label layoutX="10.0" prefHeight="53.0" prefWidth="461.0" text="Bienvenue sur notre application de visualisation des usages pédagogiques" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </VBox.margin>
+                </AnchorPane>
+                <ImageView fitHeight="280.0" fitWidth="411.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="https://thumbs.dreamstime.com/b/int%C3%A9rieur-moderne-de-salle-de-classe-20363222.jpg" />
+                    </image>
+                    <VBox.margin>
+                        <Insets left="60.0" />
+                    </VBox.margin>
+                </ImageView>
+            </children>
+        </VBox>
+    </center>
+   <right>
+      <BorderPane prefHeight="528.0" prefWidth="329.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <VBox fx:id="vboxAide" alignment="TOP_CENTER" prefHeight="414.0" prefWidth="332.0" visible="false" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="96.0" prefWidth="332.0" text="En cliquant sur suivant, vous pourrez consulter les usages pédagogiques en fonction de votre académie" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Kalimati" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="91.0" prefWidth="329.0" text="En cliquant sur connexion, vous pourrez vous connectez si vous etes administrateur et modifier les usages pedagogiques" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Kalimati" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </bottom>
+         <top>
+            <VBox accessibleRole="HYPERLINK" alignment="CENTER" prefHeight="147.0" prefWidth="329.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="117.0" prefWidth="300.0" text="Vous pouvez ici accéder à notre formulaire pour proposer des usages de votre académie, ou donner vos impressions sur l'application" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Kalimati" size="15.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink prefHeight="36.0" prefWidth="208.0" text="formulairedne.alwaysdata.net" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </top>
+         <padding>
+            <Insets top="150.0" />
+         </padding>
+      </BorderPane>
+   </right>
+</BorderPane>

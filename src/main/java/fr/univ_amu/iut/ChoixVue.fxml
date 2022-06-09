@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univ_amu.iut.ControleurChoixVue">
+    <children>
+        <HBox style="-fx-background-color: white">
+            <children>
+                <VBox alignment="TOP_CENTER" />
+                <VBox />
+            </children>
+        </HBox>
+    </children>
+    <left>
+        <VBox style="-fx-background-color: #97B6FB;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" text="Button" visible="false" />
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <HBox alignment="CENTER" spacing="50.0" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <Button fx:id="retourChoixBoutton" mnemonicParsing="false" onAction="#vaVersAccueil" style="-fx-background-color: #fff; -fx-border-color: #000;" text="Retour">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Button>
+                <Label contentDisplay="CENTER" text="Cartographie des usages" textAlignment="CENTER">
+                    <font>
+                        <Font name="Dyuthi" size="33.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="93.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="https://img.genial.ly/6049fc481c5ab90f85614253/c2c2fb3e-4c67-4024-9720-68dd7bc645bf.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <HBox prefHeight="333.0" prefWidth="424.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER">
+                    <children>
+                        <Label text="Vue par académie">
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button fx:id="academieChoixBoutton" mnemonicParsing="false" onAction="#vaVersAcademie" style="-fx-background-color: tranparent;">
+                            <graphic>
+                                <ImageView fitHeight="227.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="https://img.genial.ly/6049fc481c5ab90f85614253/31c14eec-14bf-46aa-afb1-5cb4347f1586.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="10.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox alignment="TOP_CENTER">
+                    <children>
+                        <Label text="Vue par thématiques d'usages">
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button fx:id="usagespedagogiquesbutton" mnemonicParsing="false" onAction="#vaVersUsagesPédagogiques" style="-fx-background-color: transparent;">
+                            <graphic>
+                                <ImageView fitHeight="227.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="https://img.genial.ly/6049fc481c5ab90f85614253/16abd70e-c3ba-40f1-93bf-0b124ff9e80d.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

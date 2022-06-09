@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univ_amu.iut.ControleurChoixJPA">
+   <left>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" text="Usages" />
+            <Button contentDisplay="CENTER" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" text="Acteurs" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" text="Ressources" />
+         </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" text="Coordonnées" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" text="Discipline" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #fff; -fx-border-color: #000; -fx-border-radius: 10px;" text="Thématiques" />
+         </children>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </VBox>
+   </right>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-border-color: #000; -fx-border-radius: 5px;" text="Retour" onAction="#retourVersConnexionAdmin">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>
