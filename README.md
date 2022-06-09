@@ -1,3 +1,5 @@
+Project pedagogical uses
+---------------------------------------------------------
 Hello,
 This is a repository for our application that we made me and my friends for a school project.
 We were four on it (me, Nathan Vigon, François Toureille and Arthur Lecomte), and we had only two week to make it. Some class were given at the start, so we don't write everythings. But we made the main of the code.
